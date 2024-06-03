@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Dynamic Test Suite]">
+  <listeners>
+    <listener class-name="com.superapp.report.ExtentReportListener"/>
+  </listeners>
+  <test thread-count="5" name="com.superapp.tests.VerifyComparePlanMenuLauncherTest(failed)">
+    <classes>
+      <class name="com.superapp.tests.VerifyComparePlanMenuLauncherTest">
+        <methods>
+          <include name="comparePlanMenuLauncherTest" invocation-numbers="0"/>
+          <include name="tearDown"/>
+          <include name="startServer"/>
+          <include name="openApplication"/>
+        </methods>
+      </class> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
+    </classes>
+  </test> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest(failed) -->
+</suite> <!-- Failed suite [Dynamic Test Suite] -->

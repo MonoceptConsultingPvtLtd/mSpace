@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-06-03T15:48:35 IST" name="Dynamic Test Suite" finished-at="2024-06-03T15:49:29 IST" duration-ms="54646">
+    <groups>
+    </groups>
+    <test started-at="2024-06-03T15:48:35 IST" name="com.superapp.tests.VerifyComparePlanMenuLauncherTest" finished-at="2024-06-03T15:49:29 IST" duration-ms="54646">
+      <class name="com.superapp.tests.VerifyComparePlanMenuLauncherTest">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:48:33 IST" name="startServer" finished-at="2024-06-03T15:48:35 IST" duration-ms="1690" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startServer -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:48:35 IST" name="openApplication" finished-at="2024-06-03T15:48:50 IST" duration-ms="14944" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="comparePlanMenuLauncherTest(java.util.HashMap)[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:48:50 IST" name="comparePlanMenuLauncherTest" data-provider="Datadriven" finished-at="2024-06-03T15:49:29 IST" duration-ms="39581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{SSO ID=RKHRY1015, Password=Allow#1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- comparePlanMenuLauncherTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:49:30 IST" name="tearDown" finished-at="2024-06-03T15:49:30 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
+    </test> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
+  </suite> <!-- Dynamic Test Suite -->
+</testng-results>
