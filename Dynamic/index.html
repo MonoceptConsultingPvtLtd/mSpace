@@ -55,7 +55,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Dynamic_Test_Suite" class="navigator-link ">
-                    <span class="test-stats">1 test</span>
+                    <span class="test-stats">3 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,7 +103,17 @@
                     <div class="method-list-content passed suite-Dynamic_Test_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.superapp.tests.VerifyComparePlanMenuLauncherTest" class="method navigator-link" hash-for-method="comparePlanMenuLauncherTest({SSO ID=RKHRY1015, Password=Allow#1234})">comparePlanMenuLauncherTest({SSO ID=RKHRY1015, Password=Allow#1234})</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.superapp.tests.CloseComparePlanTest" class="method navigator-link" hash-for-method="closeComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})">closeComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.superapp.tests.ComparePlanCloseDrawerTest" class="method navigator-link" hash-for-method="closeDrawerValidationTest({SSO ID=RKHRY1015, Password=Allow#1234})">closeDrawerValidationTest({SSO ID=RKHRY1015, Password=Allow#1234})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Dynamic_Test_Suite" title="com.superapp.tests.ContinueComparePlanTest" class="method navigator-link" hash-for-method="continueComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})">continueComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Dynamic_Test_Suite -->
@@ -121,14 +131,46 @@
           <div class="suite-Dynamic_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">com.superapp.tests.VerifyComparePlanMenuLauncherTest</span>
+              <span class="class-name">com.superapp.tests.ComparePlanCloseDrawerTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="comparePlanMenuLauncherTest({SSO ID=RKHRY1015, Password=Allow#1234})">
-                  </a> <!-- comparePlanMenuLauncherTest({SSO ID=RKHRY1015, Password=Allow#1234}) -->
-                  <span class="method-name">comparePlanMenuLauncherTest</span>
+                  <a name="closeDrawerValidationTest({SSO ID=RKHRY1015, Password=Allow#1234})">
+                  </a> <!-- closeDrawerValidationTest({SSO ID=RKHRY1015, Password=Allow#1234}) -->
+                  <span class="method-name">closeDrawerValidationTest</span>
+                  <span class="parameters">({SSO ID=RKHRY1015, Password=Allow#1234})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dynamic_Test_Suite-class-passed -->
+          <div class="suite-Dynamic_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.superapp.tests.ContinueComparePlanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="continueComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})">
+                  </a> <!-- continueComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234}) -->
+                  <span class="method-name">continueComparePlanTest</span>
+                  <span class="parameters">({SSO ID=RKHRY1015, Password=Allow#1234})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Dynamic_Test_Suite-class-passed -->
+          <div class="suite-Dynamic_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.superapp.tests.CloseComparePlanTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="closeComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})">
+                  </a> <!-- closeComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234}) -->
+                  <span class="method-name">closeComparePlanTest</span>
                   <span class="parameters">({SSO ID=RKHRY1015, Password=Allow#1234})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -146,11 +188,21 @@
   &lt;listeners&gt;
     &lt;listener class-name=&quot;com.superapp.report.ExtentReportListener&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;com.superapp.tests.VerifyComparePlanMenuLauncherTest&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;com.superapp.tests.ComparePlanCloseDrawerTest&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.superapp.tests.VerifyComparePlanMenuLauncherTest&quot;/&gt;
+      &lt;class name=&quot;com.superapp.tests.ComparePlanCloseDrawerTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest --&gt;
+  &lt;/test&gt; &lt;!-- com.superapp.tests.ComparePlanCloseDrawerTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;com.superapp.tests.CloseComparePlanTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.superapp.tests.CloseComparePlanTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- com.superapp.tests.CloseComparePlanTest --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;com.superapp.tests.ContinueComparePlanTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.superapp.tests.ContinueComparePlanTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- com.superapp.tests.ContinueComparePlanTest --&gt;
 &lt;/suite&gt; &lt;!-- Dynamic Test Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,7 +214,13 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">com.superapp.tests.VerifyComparePlanMenuLauncherTest (1 class)</span>
+                <span class="test-name">com.superapp.tests.ComparePlanCloseDrawerTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">com.superapp.tests.CloseComparePlanTest (1 class)</span>
+              </li>
+              <li>
+                <span class="test-name">com.superapp.tests.ContinueComparePlanTest (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -188,16 +246,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'comparePlanMenuLauncherTest')
-data.setCell(0, 2, 'com.superapp.tests.VerifyComparePlanMenuLauncherTest')
-data.setCell(0, 3, 39581);
+data.setCell(0, 1, 'closeDrawerValidationTest')
+data.setCell(0, 2, 'com.superapp.tests.ComparePlanCloseDrawerTest')
+data.setCell(0, 3, 45805);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'continueComparePlanTest')
+data.setCell(1, 2, 'com.superapp.tests.ContinueComparePlanTest')
+data.setCell(1, 3, 44292);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'closeComparePlanTest')
+data.setCell(2, 2, 'com.superapp.tests.CloseComparePlanTest')
+data.setCell(2, 3, 43198);
 window.suiteTableData['Dynamic_Test_Suite']= { tableData: data, tableDiv: 'times-div-Dynamic_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 39 seconds</span>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
               <div id="times-div-Dynamic_Test_Suite">
               </div> <!-- times-div-Dynamic_Test_Suite -->
             </div> <!-- times-div -->
@@ -223,22 +289,47 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.superapp.tests.VerifyComparePlanMenuLauncherTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.superapp.tests.ContinueComparePlanTest</div> <!-- chronological-class-name -->
               <div class="configuration-suite before">
                 <span class="method-name">startServer</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.superapp.tests.ComparePlanCloseDrawerTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">openApplication</span>
-                <span class="method-start">1804 ms</span>
+                <span class="method-start">1805 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">comparePlanMenuLauncherTest({SSO ID=RKHRY1015, Password=Allow#1234})</span>
-                <span class="method-start">16749 ms</span>
+                <span class="method-name">closeDrawerValidationTest({SSO ID=RKHRY1015, Password=Allow#1234})</span>
+                <span class="method-start">17558 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.superapp.tests.CloseComparePlanTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApplication</span>
+                <span class="method-start">63878 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">closeComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})</span>
+                <span class="method-start">78047 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.superapp.tests.ContinueComparePlanTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">openApplication</span>
+                <span class="method-start">121332 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">continueComparePlanTest({SSO ID=RKHRY1015, Password=Allow#1234})</span>
+                <span class="method-start">134883 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">56786 ms</span>
+                <span class="method-start">179219 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

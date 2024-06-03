@@ -10,6 +10,7 @@ import com.superapp.baseclass.BaseClass;
 import com.superapp.pages.ApplicationLoginPage;
 import com.superapp.pages.AttendanceDrawerPage;
 import com.superapp.pages.CaroselScreenPage;
+import com.superapp.pages.ComparePlanPage;
 import com.superapp.pages.MSpaceHomePage;
 import com.superapp.pages.MenuBottomLauncherNavigationPage;
 import com.superapp.pages.PolicyLoginPage;
@@ -32,6 +33,7 @@ public class VerifyComparePlanMenuLauncherTest extends BaseClass
 	PolicyLoginPage policyLoginPage=null;
 	MenuBottomLauncherNavigationPage menuLauncher=null;
 	MenuBottomLauncherNavigationPage comparePlanLauncher=null;
+	ComparePlanPage comparePlanPage=null;
 
 	@Record(author = "Narada")
 	@Test(dataProvider = "Datadriven")
@@ -48,6 +50,7 @@ public class VerifyComparePlanMenuLauncherTest extends BaseClass
 		policyLoginPage=new PolicyLoginPage(adriver);
 		menuLauncher=new MenuBottomLauncherNavigationPage(adriver);
 		comparePlanLauncher=new MenuBottomLauncherNavigationPage(adriver);
+		comparePlanPage=new ComparePlanPage(adriver);
 		
 		caroselScreen.applicationPrivacySettings();
 
@@ -68,6 +71,7 @@ public class VerifyComparePlanMenuLauncherTest extends BaseClass
 		menuLauncher.menuLauncher();
 		
 		comparePlanLauncher.comparePlansLauncher();
+		Assert.assertEquals("Compare Plan",comparePlanPage.validateComparePlanHeader());
 
 	}
 

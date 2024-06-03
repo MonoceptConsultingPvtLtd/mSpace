@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.superapp.report.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="com.superapp.tests.VerifyComparePlanMenuLauncherTest(failed)">
+  <test thread-count="5" name="com.superapp.tests.ComparePlanCloseDrawerTest(failed)">
     <classes>
-      <class name="com.superapp.tests.VerifyComparePlanMenuLauncherTest">
+      <class name="com.superapp.tests.ComparePlanCloseDrawerTest">
         <methods>
           <include name="comparePlanMenuLauncherTest" invocation-numbers="0"/>
           <include name="tearDown"/>
           <include name="startServer"/>
           <include name="openApplication"/>
         </methods>
-      </class> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
+      </class> <!-- com.superapp.tests.ComparePlanCloseDrawerTest -->
     </classes>
-  </test> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest(failed) -->
+  </test> <!-- com.superapp.tests.ComparePlanCloseDrawerTest(failed) -->
 </suite> <!-- Failed suite [Dynamic Test Suite] -->

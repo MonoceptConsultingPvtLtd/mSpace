@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T15:48:35 IST" name="Dynamic Test Suite" finished-at="2024-06-03T15:49:29 IST" duration-ms="54646">
+  <suite started-at="2024-06-03T18:34:26 IST" name="Dynamic Test Suite" finished-at="2024-06-03T18:37:24 IST" duration-ms="177510">
     <groups>
     </groups>
-    <test started-at="2024-06-03T15:48:35 IST" name="com.superapp.tests.VerifyComparePlanMenuLauncherTest" finished-at="2024-06-03T15:49:29 IST" duration-ms="54646">
-      <class name="com.superapp.tests.VerifyComparePlanMenuLauncherTest">
-        <test-method is-config="true" signature="startServer()[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:48:33 IST" name="startServer" finished-at="2024-06-03T15:48:35 IST" duration-ms="1690" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- startServer -->
-        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:48:35 IST" name="openApplication" finished-at="2024-06-03T15:48:50 IST" duration-ms="14944" status="PASS">
+    <test started-at="2024-06-03T18:34:26 IST" name="com.superapp.tests.ComparePlanCloseDrawerTest" finished-at="2024-06-03T18:35:28 IST" duration-ms="61702">
+      <class name="com.superapp.tests.ComparePlanCloseDrawerTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.superapp.tests.ComparePlanCloseDrawerTest@6548bb7d]" started-at="2024-06-03T18:34:27 IST" name="openApplication" finished-at="2024-06-03T18:34:42 IST" duration-ms="15752" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openApplication -->
-        <test-method signature="comparePlanMenuLauncherTest(java.util.HashMap)[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:48:50 IST" name="comparePlanMenuLauncherTest" data-provider="Datadriven" finished-at="2024-06-03T15:49:29 IST" duration-ms="39581" status="PASS">
+        <test-method signature="closeDrawerValidationTest(java.util.HashMap)[pri:0, instance:com.superapp.tests.ComparePlanCloseDrawerTest@6548bb7d]" started-at="2024-06-03T18:34:42 IST" name="closeDrawerValidationTest" data-provider="Datadriven" finished-at="2024-06-03T18:35:28 IST" duration-ms="45805" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -25,12 +21,54 @@
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- comparePlanMenuLauncherTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.superapp.tests.VerifyComparePlanMenuLauncherTest@6548bb7d]" started-at="2024-06-03T15:49:30 IST" name="tearDown" finished-at="2024-06-03T15:49:30 IST" duration-ms="0" status="PASS">
+        </test-method> <!-- closeDrawerValidationTest -->
+      </class> <!-- com.superapp.tests.ComparePlanCloseDrawerTest -->
+    </test> <!-- com.superapp.tests.ComparePlanCloseDrawerTest -->
+    <test started-at="2024-06-03T18:35:29 IST" name="com.superapp.tests.CloseComparePlanTest" finished-at="2024-06-03T18:36:26 IST" duration-ms="57436">
+      <class name="com.superapp.tests.CloseComparePlanTest">
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.superapp.tests.CloseComparePlanTest@62577d6]" started-at="2024-06-03T18:35:29 IST" name="openApplication" finished-at="2024-06-03T18:35:43 IST" duration-ms="14169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="closeComparePlanTest(java.util.HashMap)[pri:0, instance:com.superapp.tests.CloseComparePlanTest@62577d6]" started-at="2024-06-03T18:35:43 IST" name="closeComparePlanTest" data-provider="Datadriven" finished-at="2024-06-03T18:36:26 IST" duration-ms="43198" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{SSO ID=RKHRY1015, Password=Allow#1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeComparePlanTest -->
+      </class> <!-- com.superapp.tests.CloseComparePlanTest -->
+    </test> <!-- com.superapp.tests.CloseComparePlanTest -->
+    <test started-at="2024-06-03T18:36:26 IST" name="com.superapp.tests.ContinueComparePlanTest" finished-at="2024-06-03T18:37:24 IST" duration-ms="57891">
+      <class name="com.superapp.tests.ContinueComparePlanTest">
+        <test-method is-config="true" signature="startServer()[pri:0, instance:com.superapp.tests.ContinueComparePlanTest@5a12c728]" started-at="2024-06-03T18:34:25 IST" name="startServer" finished-at="2024-06-03T18:34:26 IST" duration-ms="1665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- startServer -->
+        <test-method is-config="true" signature="openApplication()[pri:0, instance:com.superapp.tests.ContinueComparePlanTest@5a12c728]" started-at="2024-06-03T18:36:26 IST" name="openApplication" finished-at="2024-06-03T18:36:40 IST" duration-ms="13551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openApplication -->
+        <test-method signature="continueComparePlanTest(java.util.HashMap)[pri:0, instance:com.superapp.tests.ContinueComparePlanTest@5a12c728]" started-at="2024-06-03T18:36:40 IST" name="continueComparePlanTest" data-provider="Datadriven" finished-at="2024-06-03T18:37:24 IST" duration-ms="44292" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{SSO ID=RKHRY1015, Password=Allow#1234}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- continueComparePlanTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.superapp.tests.ContinueComparePlanTest@5a12c728]" started-at="2024-06-03T18:37:24 IST" name="tearDown" finished-at="2024-06-03T18:37:24 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
-    </test> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
+      </class> <!-- com.superapp.tests.ContinueComparePlanTest -->
+    </test> <!-- com.superapp.tests.ContinueComparePlanTest -->
   </suite> <!-- Dynamic Test Suite -->
 </testng-results>

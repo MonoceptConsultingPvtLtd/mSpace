@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.superapp.tests.VerifyPolicyLoginQuickLinkTest">
+      <class name="com.superapp.tests.AppRun">
         <methods>
-          <include name="policyLoginQuickLinkTest" invocation-numbers="0"/>
-          <include name="tearDown"/>
-          <include name="startServer"/>
-          <include name="openApplication"/>
+          <include name="runApp"/>
         </methods>
-      </class> <!-- com.superapp.tests.VerifyPolicyLoginQuickLinkTest -->
+      </class> <!-- com.superapp.tests.AppRun -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

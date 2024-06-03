@@ -4,9 +4,19 @@
   <listeners>
     <listener class-name="com.superapp.report.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="com.superapp.tests.VerifyComparePlanMenuLauncherTest">
+  <test thread-count="5" name="com.superapp.tests.ComparePlanCloseDrawerTest">
     <classes>
-      <class name="com.superapp.tests.VerifyComparePlanMenuLauncherTest"/>
+      <class name="com.superapp.tests.ComparePlanCloseDrawerTest"/>
     </classes>
-  </test> <!-- com.superapp.tests.VerifyComparePlanMenuLauncherTest -->
+  </test> <!-- com.superapp.tests.ComparePlanCloseDrawerTest -->
+  <test thread-count="5" name="com.superapp.tests.CloseComparePlanTest">
+    <classes>
+      <class name="com.superapp.tests.CloseComparePlanTest"/>
+    </classes>
+  </test> <!-- com.superapp.tests.CloseComparePlanTest -->
+  <test thread-count="5" name="com.superapp.tests.ContinueComparePlanTest">
+    <classes>
+      <class name="com.superapp.tests.ContinueComparePlanTest"/>
+    </classes>
+  </test> <!-- com.superapp.tests.ContinueComparePlanTest -->
 </suite> <!-- Dynamic Test Suite -->
