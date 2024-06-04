@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-06-03T18:34:23 IST" name="Default suite" finished-at="2024-06-03T18:37:24 IST" duration-ms="180856">
+  <suite started-at="2024-06-04T13:20:57 IST" name="Default suite" finished-at="2024-06-04T13:22:19 IST" duration-ms="82262">
     <groups>
     </groups>
-    <test started-at="2024-06-03T18:34:23 IST" name="Default test" finished-at="2024-06-03T18:37:24 IST" duration-ms="180856">
+    <test started-at="2024-06-04T13:20:57 IST" name="Default test" finished-at="2024-06-04T13:22:19 IST" duration-ms="82262">
       <class name="com.superapp.tests.AppRun">
-        <test-method signature="runApp()[pri:0, instance:com.superapp.tests.AppRun@1a942c18]" started-at="2024-06-03T18:34:23 IST" name="runApp" finished-at="2024-06-03T18:37:24 IST" duration-ms="180753" status="PASS">
+        <test-method signature="runApp()[pri:0, instance:com.superapp.tests.AppRun@1a942c18]" started-at="2024-06-04T13:20:57 IST" name="runApp" finished-at="2024-06-04T13:22:19 IST" duration-ms="82212" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- runApp -->

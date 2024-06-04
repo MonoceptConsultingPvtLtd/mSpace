@@ -4,19 +4,9 @@
   <listeners>
     <listener class-name="com.superapp.report.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="com.superapp.tests.ComparePlanCloseDrawerTest">
+  <test thread-count="5" name="com.superapp.tests.GenerateQuoteExitButtonValidationTest">
     <classes>
-      <class name="com.superapp.tests.ComparePlanCloseDrawerTest"/>
+      <class name="com.superapp.tests.GenerateQuoteExitButtonValidationTest"/>
     </classes>
-  </test> <!-- com.superapp.tests.ComparePlanCloseDrawerTest -->
-  <test thread-count="5" name="com.superapp.tests.CloseComparePlanTest">
-    <classes>
-      <class name="com.superapp.tests.CloseComparePlanTest"/>
-    </classes>
-  </test> <!-- com.superapp.tests.CloseComparePlanTest -->
-  <test thread-count="5" name="com.superapp.tests.ContinueComparePlanTest">
-    <classes>
-      <class name="com.superapp.tests.ContinueComparePlanTest"/>
-    </classes>
-  </test> <!-- com.superapp.tests.ContinueComparePlanTest -->
+  </test> <!-- com.superapp.tests.GenerateQuoteExitButtonValidationTest -->
 </suite> <!-- Dynamic Test Suite -->

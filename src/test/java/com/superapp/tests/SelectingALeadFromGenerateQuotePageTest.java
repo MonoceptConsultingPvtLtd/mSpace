@@ -14,14 +14,14 @@ import com.superapp.pages.GenerateQuotePage;
 import com.superapp.pages.MSpaceHomePage;
 import com.superapp.pages.MenuBottomLauncherNavigationPage;
 import com.superapp.pages.SSOLoginPage;
+import com.superapp.utils.DriverAndroid;
 import com.superapp.utils.GenerateDynamicTestNG;
 import com.superapp.utils.Record;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class GeneratingAQuoteForALeadTest extends BaseClass
+public class SelectingALeadFromGenerateQuotePageTest extends BaseClass
 {
-
 	CaroselScreenPage caroselScreen = null;
 	ApplicationLoginPage applicationLogin = null;
 	SSOLoginPage ssoLogin = null;
@@ -30,15 +30,16 @@ public class GeneratingAQuoteForALeadTest extends BaseClass
 	MenuBottomLauncherNavigationPage menuLauncher=null;
 	MenuBottomLauncherNavigationPage generateQuoteMenuLauncher=null;
 	GenerateQuotePage generateQuotePage=null;
-	
+	DriverAndroid contextHandles=null;
+
 
 	@Record(author = "Narada")
 	@Test(dataProvider = "Datadriven")
-	public void generatingAQuote(HashMap<String, String> data) throws InterruptedException
+	public void selectLeadFromGenerateQuote(HashMap<String, String> data) throws InterruptedException
 	{
-		
+
 		AndroidDriver adriver= (AndroidDriver) driver;
-		
+
 		caroselScreen = new CaroselScreenPage(adriver);
 		applicationLogin = new ApplicationLoginPage(adriver);
 		ssoLogin = new SSOLoginPage(adriver);
@@ -46,7 +47,11 @@ public class GeneratingAQuoteForALeadTest extends BaseClass
 		mspaceHomePage=new MSpaceHomePage(adriver);
 		generateQuoteMenuLauncher=new MenuBottomLauncherNavigationPage(adriver);
 		menuLauncher=new MenuBottomLauncherNavigationPage(adriver);
+		generateQuotePage=new GenerateQuotePage(adriver);
+		contextHandles=new DriverAndroid(adriver);
 
+		caroselScreen.applicationPrivacySettings();
+		
 		Assert.assertEquals(applicationLogin.applicationLoginPage(),"Login");
 		applicationLogin.applicationLogin();
 
@@ -55,7 +60,24 @@ public class GeneratingAQuoteForALeadTest extends BaseClass
 		System.out.println(data.get("Password"));
 		ssoLogin.ssoLoginDetails(data.get("SSO ID"),data.get("Password"));
 
+		Assert.assertEquals(ssoLogin.validateBiometricPopUp(), true);
+		ssoLogin.completeBiometric();
 		
+		Assert.assertEquals(mspaceHomePage.skipGestureInHomePage(), true);
+		mspaceHomePage.skipGesture();
+		
+		menuLauncher.menuLauncher();
+
+		generateQuoteMenuLauncher.generateQuoteLauncher();
+		
+		generateQuotePage.generateQuoteCoachMark();
+		
+		Assert.assertEquals("Generate Quote",generateQuotePage.validateGenerateQuoteHeader());
+	
+		generateQuotePage.selectLeadsFromGenerateQuotePage();
+		
+		Assert.assertEquals("Generate Quote",generateQuotePage.validateGenerateQuoteHomePageHeader());
+
 	}
 
 	@DataProvider(name="Datadriven")

@@ -10,50 +10,48 @@ import com.superapp.baseclass.BaseClass;
 import com.superapp.pages.ApplicationLoginPage;
 import com.superapp.pages.AttendanceDrawerPage;
 import com.superapp.pages.CaroselScreenPage;
-import com.superapp.pages.ComparePlanPage;
+import com.superapp.pages.GenerateQuotePage;
 import com.superapp.pages.MSpaceHomePage;
 import com.superapp.pages.MenuBottomLauncherNavigationPage;
-import com.superapp.pages.PolicyLoginPage;
-import com.superapp.pages.QuickLinksPage;
 import com.superapp.pages.SSOLoginPage;
+import com.superapp.utils.DriverAndroid;
 import com.superapp.utils.GenerateDynamicTestNG;
 import com.superapp.utils.Record;
 
 import io.appium.java_client.android.AndroidDriver;
 
-public class ComparePlanCloseDrawerTest extends BaseClass
+public class GenerateQuoteContinueButtonCloseValidationTest extends BaseClass
 {
-
 	CaroselScreenPage caroselScreen = null;
 	ApplicationLoginPage applicationLogin = null;
 	SSOLoginPage ssoLogin = null;
 	AttendanceDrawerPage attendanceDrawer= null;
-	QuickLinksPage quickLink = null;
 	MSpaceHomePage mspaceHomePage=null;
-	PolicyLoginPage policyLoginPage=null;
 	MenuBottomLauncherNavigationPage menuLauncher=null;
-	MenuBottomLauncherNavigationPage comparePlanLauncher=null;
-	ComparePlanPage comparePlanPage=null;
+	MenuBottomLauncherNavigationPage generateQuoteMenuLauncher=null;
+	GenerateQuotePage generateQuotePage=null;
+	DriverAndroid contextHandles=null;
+
 
 	@Record(author = "Narada")
 	@Test(dataProvider = "Datadriven")
-	public void closeDrawerValidationTest(HashMap<String, String> data) throws InterruptedException
+	public void generateQuoteContinueButtonCloseValidationTest(HashMap<String, String> data) throws InterruptedException
 	{
+
 		AndroidDriver adriver= (AndroidDriver) driver;
-		
+
 		caroselScreen = new CaroselScreenPage(adriver);
 		applicationLogin = new ApplicationLoginPage(adriver);
 		ssoLogin = new SSOLoginPage(adriver);
 		attendanceDrawer= new AttendanceDrawerPage(adriver);
-		quickLink = new QuickLinksPage(adriver);
 		mspaceHomePage=new MSpaceHomePage(adriver);
-		policyLoginPage=new PolicyLoginPage(adriver);
+		generateQuoteMenuLauncher=new MenuBottomLauncherNavigationPage(adriver);
 		menuLauncher=new MenuBottomLauncherNavigationPage(adriver);
-		comparePlanLauncher=new MenuBottomLauncherNavigationPage(adriver);
-		comparePlanPage=new ComparePlanPage(adriver);
-		
-		caroselScreen.applicationPrivacySettings();
+		generateQuotePage=new GenerateQuotePage(adriver);
+		contextHandles=new DriverAndroid(adriver);
 
+		caroselScreen.applicationPrivacySettings();
+		
 		Assert.assertEquals(applicationLogin.applicationLoginPage(),"Login");
 		applicationLogin.applicationLogin();
 
@@ -61,7 +59,7 @@ public class ComparePlanCloseDrawerTest extends BaseClass
 		System.out.println(data.get("SSO ID"));
 		System.out.println(data.get("Password"));
 		ssoLogin.ssoLoginDetails(data.get("SSO ID"),data.get("Password"));
-		
+
 		Assert.assertEquals(ssoLogin.validateBiometricPopUp(), true);
 		ssoLogin.completeBiometric();
 		
@@ -69,15 +67,24 @@ public class ComparePlanCloseDrawerTest extends BaseClass
 		mspaceHomePage.skipGesture();
 		
 		menuLauncher.menuLauncher();
+
+		generateQuoteMenuLauncher.generateQuoteLauncher();
 		
-		comparePlanLauncher.comparePlansLauncher();
+		generateQuotePage.generateQuoteCoachMark();
 		
-		comparePlanPage.closeComparePlanSymbol();
-		
-		Assert.assertEquals("Do you want to generate quote for this product?",comparePlanPage.closeDrawerValidation());
+		Assert.assertEquals("Generate Quote",generateQuotePage.validateGenerateQuoteHeader());
 	
-		comparePlanPage.exitComparePlan();
-			
+		generateQuotePage.selectLeadsFromGenerateQuotePage();
+		
+		Assert.assertEquals("Generate Quote",generateQuotePage.validateGenerateQuoteHomePageHeader());
+
+		generateQuotePage.generateQuoteCloseSymbol();
+		
+		Assert.assertEquals("Want to exit journey?",generateQuotePage.validateGenerateQuoteCloseDrawer());
+		
+		generateQuotePage.continueGenerateQuote();
+		
+		Assert.assertEquals("Generate Quote",generateQuotePage.validateGenerateQuoteHomePageHeader());
 	}
 
 	@DataProvider(name="Datadriven")

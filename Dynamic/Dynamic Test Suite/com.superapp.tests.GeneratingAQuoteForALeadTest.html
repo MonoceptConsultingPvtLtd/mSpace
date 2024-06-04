@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jun 03 12:40:57 IST 2024</td>
+<td>Started on:</td><td>Mon Jun 03 20:24:55 IST 2024</td>
 </tr>
-<tr><td>Total time:</td><td>22 seconds (22925 ms)</td>
+<tr><td>Total time:</td><td>54 seconds (54038 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,22 +77,15 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.superapp.tests.GeneratingAQuoteForALeadTest.generatingAQuote()'><b>generatingAQuote</b><br>Test class: com.superapp.tests.GeneratingAQuoteForALeadTest<br>Parameters: {SSO ID=RKHRY1015, Password=Allow#1234}</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.superapp.tests.GeneratingAQuoteForALeadTest.generatingAQuote(GeneratingAQuoteForALeadTest.java:53)
+<td><div><pre>java.lang.NullPointerException: Cannot invoke &quot;com.superapp.pages.GenerateQuotePage.generateQuoteCoachMark()&quot; because &quot;this.generateQuotePage&quot; is null
+	at com.superapp.tests.GeneratingAQuoteForALeadTest.generatingAQuote(GeneratingAQuoteForALeadTest.java:70)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at com.superapp.utils.GenerateDynamicTestNG.generateTestNGXMLFromExcel(GenerateDynamicTestNG.java:212)
 	at com.superapp.tests.AppRun.runApp(AppRun.java:12)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 58 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1885991030", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1885991030'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:1067)
-	at org.testng.Assert.assertEquals(Assert.java:1031)
-	at org.testng.Assert.assertEquals(Assert.java:1077)
-	at com.superapp.tests.GeneratingAQuoteForALeadTest.generatingAQuote(GeneratingAQuoteForALeadTest.java:53)
+... Removed 51 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace345142475", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace345142475'><pre>java.lang.NullPointerException: Cannot invoke &quot;com.superapp.pages.GenerateQuotePage.generateQuoteCoachMark()&quot; because &quot;this.generateQuotePage&quot; is null
+	at com.superapp.tests.GeneratingAQuoteForALeadTest.generatingAQuote(GeneratingAQuoteForALeadTest.java:70)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -149,7 +142,7 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>8</td>
+<td>38</td>
 <td>com.superapp.tests.GeneratingAQuoteForALeadTest@6548bb7d</td></tr>
 </table><p>
 </body>
