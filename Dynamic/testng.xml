@@ -4,9 +4,9 @@
   <listeners>
     <listener class-name="com.superapp.report.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="com.superapp.tests.GenerateQuoteExitButtonValidationTest">
+  <test thread-count="5" name="com.superapp.tests.VerifyComparePlanQuickLinkTest">
     <classes>
-      <class name="com.superapp.tests.GenerateQuoteExitButtonValidationTest"/>
+      <class name="com.superapp.tests.VerifyComparePlanQuickLinkTest"/>
     </classes>
-  </test> <!-- com.superapp.tests.GenerateQuoteExitButtonValidationTest -->
+  </test> <!-- com.superapp.tests.VerifyComparePlanQuickLinkTest -->
 </suite> <!-- Dynamic Test Suite -->

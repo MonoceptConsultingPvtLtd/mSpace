@@ -55,6 +55,9 @@ public class GenerateQuotePage
 
 	@AndroidFindBy(xpath="//android.widget.TextView[@text='No, Continue']")
 	private WebElement android_generateQuoteHomePageContinueButton;
+	
+	@AndroidFindBy(xpath="//android.widget.TextView[@text='No, Continue']")
+	private WebElement android_generateQuoteSelectPlanButton;
 
 	public GenerateQuotePage(AndroidDriver driver) 
 	{  
@@ -132,6 +135,13 @@ public class GenerateQuotePage
 		wait.explicitWaitVisibilityOf(driver, android_generateQuoteHomePageContinueButton);
 		android_generateQuoteHomePageContinueButton.click();
 		report.info(logging, "Yes, Continue button is clicked and returns back to the Generate Quote Home Page");
+	}
+	
+	public void selectPlanButton()
+	{
+		wait.explicitWaitVisibilityOf(driver, android_generateQuoteSelectPlanButton);
+		android_generateQuoteSelectPlanButton.click();
+		report.info(logging, "Click on Select Plan Button");
 	}
 
 }

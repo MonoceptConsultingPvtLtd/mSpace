@@ -42,7 +42,7 @@ public class QuickLinksPage
 	@AndroidFindBy(accessibility="Policy\n"+"Servicing")
 	private WebElement android_policyServicing;
 	
-	@AndroidFindBy(accessibility="Compare\n"+"Plans")
+	@AndroidFindBy(xpath="//android.view.ViewGroup[@content-desc=\"Compare Plans\"]/android.widget.TextView")
 	private WebElement android_comparePlans;
 	
 	@AndroidFindBy(xpath="//android.view.ViewGroup[@content-desc=\"Got it!\"]/android.widget.TextView")

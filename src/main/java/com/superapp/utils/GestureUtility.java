@@ -1,5 +1,6 @@
 package com.superapp.utils;
 
+import java.time.Duration;
 import java.util.Map;
 
 import org.openqa.selenium.JavascriptExecutor;
@@ -11,18 +12,24 @@ import com.google.common.collect.ImmutableMap;
 
 import io.appium.java_client.AppiumBy;
 import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.TouchAction;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.touch.WaitOptions;
+import io.appium.java_client.touch.offset.PointOption;
 
 public class GestureUtility 
 {
 
-	private AppiumDriver driver;
+	private AndroidDriver driver;
 	WaitUtility wait;
+	TouchAction action;
 
-	public GestureUtility(AppiumDriver driver) 
+	public GestureUtility(AndroidDriver driver) 
 	{
 
 		this.driver=driver;
-		wait=new WaitUtility();			
+		wait=new WaitUtility();		
+		action = new TouchAction(driver);
 
 	}
 
@@ -108,12 +115,14 @@ public class GestureUtility
 		driver.findElement(AppiumBy.androidUIAutomator("new UiScrollable(new UiSelector()).scrollIntoView("+an+"(\""+av+"\"))"));
 	}
 
-	public void scrollGesture()
+	public void scrollGesture(int StartX, int StartY,int EndX, int EndY) throws InterruptedException
 	{
-		WebElement element = driver.findElement(AppiumBy.xpath("//android.widget.TextView[@text='PERFORMANCE']"));
-		driver.executeScript("mobile:scroll", 
-				ImmutableMap.of("direction", "down", "element", ((RemoteWebElement) element).getId())
-				);
+		Thread.sleep(6000);	
+		action.press(PointOption.point(StartX, StartY))
+		      .waitAction(WaitOptions.waitOptions(Duration.ofMillis(500)))
+		      .moveTo(PointOption.point(EndX, EndY))
+		      .release()
+		      .perform();
 	}
 
 

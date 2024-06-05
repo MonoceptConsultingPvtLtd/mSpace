@@ -4,16 +4,16 @@
   <listeners>
     <listener class-name="com.superapp.report.ExtentReportListener"/>
   </listeners>
-  <test thread-count="5" name="com.superapp.tests.GenerateQuoteCloseValidationTest(failed)">
+  <test thread-count="5" name="com.superapp.tests.VerifyComparePlanQuickLinkTest(failed)">
     <classes>
-      <class name="com.superapp.tests.GenerateQuoteCloseValidationTest">
+      <class name="com.superapp.tests.VerifyComparePlanQuickLinkTest">
         <methods>
+          <include name="comparePlanMenuLauncherTest" invocation-numbers="0"/>
           <include name="tearDown"/>
-          <include name="generateQuoteCloseValidationTest" invocation-numbers="0"/>
           <include name="startServer"/>
           <include name="openApplication"/>
         </methods>
-      </class> <!-- com.superapp.tests.GenerateQuoteCloseValidationTest -->
+      </class> <!-- com.superapp.tests.VerifyComparePlanQuickLinkTest -->
     </classes>
-  </test> <!-- com.superapp.tests.GenerateQuoteCloseValidationTest(failed) -->
+  </test> <!-- com.superapp.tests.VerifyComparePlanQuickLinkTest(failed) -->
 </suite> <!-- Failed suite [Dynamic Test Suite] -->
